@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@model EauClairesSalon.Models.Stylist
+@using EauClairesSalon.Models
+
+<h3>@Model.Name</h3>
+
+<p>Clients:</p>
+@foreach (Client client in Model.Clients)
+{
+  <li>@Html.ActionLink($"{client.Name}", "Details", "Items", new { id = client.ClientId }, new { @class = "btn" })</li>
+}
+

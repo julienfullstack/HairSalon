@@ -1,0 +1,10 @@
+@{
+  Layout = "_Layout";
+}
+
+@model EauClairesSalon.Models.Client
+
+<h3>@Model.Name</h3>
+
+<p>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.Name)</p>
+
