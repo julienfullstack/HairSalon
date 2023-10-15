@@ -11,8 +11,8 @@
 * _MSTest_
 * _Git_
 * _Visual Studio Code_
-*_ASP.NET Core MVC_
-*_MySQL_
+* _ASP.NET Core MVC_
+* _MySQL_
 
 ## Description
 #### _A website which allows a salon owner to see their list of stylists, see clients for each stylist, and add new stylists/clients._
