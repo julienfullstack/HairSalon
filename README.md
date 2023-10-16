@@ -26,7 +26,7 @@
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
   }
-} _
+} 
 * _In the EauClairesSalon dictionary, restore with $ dotnet restore_
 * _Download MySQL and MySQL Workbench if you do not have them already_
 * _In MySQL Workbench, go to the Navigator > Administration window and select Data Import/Restore_
