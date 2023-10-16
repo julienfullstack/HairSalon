@@ -21,7 +21,12 @@
 * _Clone this respository to your desktop_
 * _Navigate to the top level of the directory_
 * _Open in your code editor_
-* _Create a file named "appsettings.json" in the HairSalon directory_
+* _Create a file named "appsettings.json" in the HairSalon directory with the following code:
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
+  }
+} _
 * _In the EauClairesSalon dictionary, restore with $ dotnet restore_
 * _Download MySQL and MySQL Workbench if you do not have them already_
 * _In MySQL Workbench, go to the Navigator > Administration window and select Data Import/Restore_
