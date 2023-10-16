@@ -30,7 +30,7 @@
 * _Under Default Schema to be Imported To, select the New button_
 * _Enter the name of your database and click Ok_
 * _Click Start Import_
-* _In the terminal, enter $ dotnet ef database update to create the database_
+* _In the terminal, enter $ dotnet-ef database update to create the database_
 * _In the terminal, enter $ dotnet run to run the program_
 
 ## Known Bugs
