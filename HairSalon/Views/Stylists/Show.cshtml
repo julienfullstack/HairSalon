@@ -8,8 +8,24 @@
 <h3>@Model.Name</h3>
 
 <p>Clients:</p>
-@foreach (Client client in Model.Clients)
-{
-  <li>@Html.ActionLink($"{client.Name}", "Details", "Items", new { id = client.ClientId }, new { @class = "btn" })</li>
-}
 
+ @if (Model.Clients != null && Model.Clients.Any())
+  {
+    <h2>Clients for @Html.DisplayFor(model => model.Name):</h2>
+    foreach (Client client in Model.Clients)
+    {
+        <p>Client Name: @client.Name</p>
+    }
+  }
+  else
+  {
+    <p>No clients available for this stylist.</p>
+
+   
+  }
+
+
+
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
+
+<p>@Html.ActionLink("Add a Client", "Create", "Clients", null, new { @class = "btn" })</p>
