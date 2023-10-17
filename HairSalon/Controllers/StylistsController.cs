@@ -34,20 +34,23 @@ namespace HairSalon.Controllers
 			return RedirectToAction("Index");
 		}
 
-		public ActionResult Show(int id)
-		{
-			Stylist thisStylist = _db.Stylists
-																.Include(stylist => stylist.Clients)
-																.FirstOrDefault(stylist => stylist.StylistId == id);
-			return View(thisStylist);
+public ActionResult Show(int id)
+{
+    Stylist thisStylist = _db.Stylists
+                            .Include(stylist => stylist.Clients)
+                            .FirstOrDefault(stylist => stylist.StylistId == id);
+    return View(thisStylist);
+}
 
-		}
 
-		public ActionResult Edit(int id)
-		{
-			Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-			return View(thisStylist);
-		}
+	public ActionResult Edit(int id)
+{
+    Stylist thisStylist = _db.Stylists
+                            .Include(stylist => stylist.Clients)
+                            .FirstOrDefault(stylist => stylist.StylistId == id);
+    return View(thisStylist);
+}
+
 
 		[HttpPost]
 		public ActionResult Edit(Stylist stylist)
@@ -73,3 +76,4 @@ namespace HairSalon.Controllers
 		}
 	}
 }
+
